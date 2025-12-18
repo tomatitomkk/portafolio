@@ -377,7 +377,7 @@ body::after {
 .carousel-container {
 	width: 100%;
 	max-width: 1600px;
-	height: 650px;
+	height: 550px;
 	perspective: 1200px;
 	position: relative;
 	padding-top: 60px;
@@ -612,7 +612,7 @@ body::after {
 
 /* NEW: Prism Philosophy Section */
 .philosophy-section {
-	padding: 120px 30px;
+    padding: 200px 30px 120px; /* MÁS espacio arriba */
 	background: linear-gradient(180deg,
 			var(--primary-black) 0%,
 			rgba(153, 69, 255, 0.02) 50%,
@@ -2421,4 +2421,5 @@ a.info-item {
 			}
 
 	}
+
 }
