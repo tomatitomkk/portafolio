@@ -2424,3 +2424,504 @@ a.info-item {
 
 }
 
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE OPTIMIZATION
+   ============================================ */
+
+/* Tablet (1024px y menos) */
+@media (max-width: 1024px) {
+    .nav-container {
+        padding: 15px 20px;
+    }
+
+    .carousel-container {
+        height: 500px;
+        max-width: 100%;
+        padding: 40px 10px;
+    }
+
+    .carousel-item {
+        width: 320px;
+    }
+
+    .carousel-item .card {
+        min-height: 450px;
+        padding: 25px;
+    }
+
+    .card-image {
+        height: 180px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-description {
+        font-size: 13px;
+    }
+
+    .philosophy-section {
+        padding: 100px 20px 80px;
+    }
+
+    .philosophy-headline {
+        font-size: 42px;
+    }
+
+    .philosophy-subheading {
+        font-size: 18px;
+    }
+
+    .philosophy-pillars {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-hexagon-grid {
+        gap: 15px;
+    }
+
+    .skill-hexagon {
+        width: 180px;
+        height: 200px;
+        margin: 20px 5px;
+    }
+}
+
+/* Mobile (768px y menos) */
+@media (max-width: 768px) {
+    /* NAVIGATION */
+    .menu-toggle {
+        display: flex;
+        z-index: 1001;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 75px;
+        flex-direction: column;
+        background: rgba(18, 18, 18, 0.98);
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        padding: 30px 0;
+        border-bottom: 1px solid var(--metal-dark);
+        gap: 0;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+        max-height: calc(100vh - 75px);
+        overflow-y: auto;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 15px 30px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    /* HERO CAROUSEL */
+    .hero {
+        min-height: 80vh;
+        padding: 100px 15px 60px;
+    }
+
+    .carousel-container {
+        height: 520px;
+        padding: 50px 5px 0;
+        perspective: 1000px;
+    }
+
+    .carousel-item {
+        width: 280px;
+    }
+
+    .carousel-item .card {
+        min-height: 480px;
+        padding: 20px;
+    }
+
+    .card-image {
+        height: 140px;
+        margin-bottom: 15px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .card-description {
+        font-size: 12px;
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+
+    .card-tech {
+        margin-bottom: 15px;
+        gap: 6px;
+    }
+
+    .tech-badge {
+        padding: 4px 10px;
+        font-size: 10px;
+    }
+
+    .card-number {
+        font-size: 48px;
+        top: 15px;
+        right: 20px;
+    }
+
+    .card-cta {
+        padding: 10px 25px;
+        font-size: 12px;
+    }
+
+    .carousel-controls {
+        bottom: -60px;
+        gap: 15px;
+    }
+
+    .carousel-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .carousel-indicators {
+        top: 15px;
+        gap: 10px;
+    }
+
+    .indicator {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* PHILOSOPHY SECTION */
+    .philosophy-section {
+        padding: 80px 15px 60px;
+    }
+
+    .philosophy-headline {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .philosophy-subheading {
+        font-size: 16px;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+
+    .philosophy-pillars {
+        gap: 25px;
+    }
+
+    .pillar {
+        padding: 30px 20px;
+    }
+
+    .pillar-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 32px;
+    }
+
+    .pillar-title {
+        font-size: 20px;
+    }
+
+    .pillar-description {
+        font-size: 14px;
+    }
+
+    /* STATS SECTION */
+    .stats-section {
+        padding: 80px 15px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .stat-card {
+        padding: 30px 20px;
+    }
+
+    .stat-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 32px;
+    }
+
+    .stat-number {
+        font-size: 40px;
+    }
+
+    .stat-label {
+        font-size: 13px;
+    }
+
+    .stat-description {
+        font-size: 12px;
+    }
+
+    /* SKILLS SECTION */
+    .skills-section {
+        padding: 80px 15px;
+    }
+
+    .skill-categories {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .category-tab {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .skills-hexagon-grid {
+        gap: 10px;
+    }
+
+    .skill-hexagon {
+        width: 140px;
+        height: 160px;
+        margin: 15px 5px;
+    }
+
+    .skill-icon-hex {
+        font-size: 32px;
+    }
+
+    .skill-name-hex {
+        font-size: 13px;
+    }
+
+    .skill-percentage-hex {
+        font-size: 12px;
+    }
+
+    /* CONTACT SECTION */
+    .contact-section {
+        padding: 80px 15px;
+    }
+
+    .contact-container {
+        gap: 30px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 25px;
+    }
+
+    .info-item {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .info-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+        margin-right: 15px;
+    }
+
+    .info-text h4 {
+        font-size: 14px;
+    }
+
+    .info-text p {
+        font-size: 13px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        font-size: 11px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        padding: 13px;
+        font-size: 14px;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 40px 15px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        justify-content: center;
+    }
+
+    .footer-description {
+        font-size: 13px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-section h4 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .copyright,
+    .footer-credits {
+        font-size: 12px;
+    }
+}
+
+/* Mobile pequeño (480px y menos) */
+@media (max-width: 480px) {
+    .carousel-container {
+        height: 500px;
+    }
+
+    .carousel-item {
+        width: 260px;
+    }
+
+    .carousel-item .card {
+        min-height: 460px;
+        padding: 18px;
+    }
+
+    .card-image {
+        height: 120px;
+    }
+
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-description {
+        font-size: 11px;
+    }
+
+    .philosophy-headline {
+        font-size: 28px;
+    }
+
+    .philosophy-subheading {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .skill-hexagon {
+        width: 120px;
+        height: 140px;
+    }
+}
+
+/* Landscape móvil */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 80px 15px 40px;
+    }
+
+    .carousel-container {
+        height: 400px;
+    }
+
+    .carousel-item .card {
+        min-height: 380px;
+    }
+}
+
+/* Fix para evitar scroll horizontal */
+* {
+    max-width: 100%;
+}
+
+html, body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Touch optimization para móviles */
+@media (hover: none) and (pointer: coarse) {
+    .carousel-item .card,
+    .stat-card,
+    .pillar,
+    .skill-hexagon,
+    .info-item,
+    button,
+    a {
+        -webkit-tap-highlight-color: rgba(153, 69, 255, 0.2);
+    }
+
+    /* Hacer los botones más grandes en táctil */
+    .carousel-btn {
+        width: 55px;
+        height: 55px;
+    }
+
+    .category-tab {
+        min-height: 44px; /* Tamaño mínimo táctil recomendado */
+    }
+}
+
