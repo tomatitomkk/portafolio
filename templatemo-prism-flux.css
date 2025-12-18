@@ -393,9 +393,9 @@ body::after {
 .carousel-item {
   position: absolute;
   width: 400px;
-  /* height: 500px;  <- comenta o borra esta línea */
   left: 50%;
   top: 50%;
+  transform: translate(-50%, -50%);  /* ← Centra correctamente */
   transform-style: preserve-3d;
   transition: all 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
   cursor: pointer;
@@ -2423,3 +2423,4 @@ a.info-item {
 	}
 
 }
+
