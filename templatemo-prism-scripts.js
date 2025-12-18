@@ -63,7 +63,6 @@
             }
         ];
 
-        // Skills data
         const skillsData = [
             { name: 'React.js', icon: '⚛️', level: 95, category: 'frontend' },
             { name: 'Node.js', icon: '🟢', level: 90, category: 'backend' },
@@ -76,8 +75,18 @@
             { name: 'TensorFlow', icon: '🤖', level: 78, category: 'emerging' },
             { name: 'Java', icon: '🔗', level: 75, category: 'emerging' },
             { name: 'Vue.js', icon: '💚', level: 85, category: 'frontend' },
-            { name: 'MongoDB', icon: '🍃', level: 95, category: 'backend' }
+            { name: 'MongoDB', icon: '🍃', level: 95, category: 'backend' },
+    // Nuevas + demandadas 2025
+            { name: 'C#', icon: '🔷', level: 92, category: 'backend' },
+            { name: 'C++', icon: '🔷', level: 88, category: 'backend' },
+            { name: 'AWS', icon: '☁️', level: 85, category: 'cloud' },
+            { name: '.NET', icon: '🔷', level: 87, category: 'backend' },
+            { name: 'Git', icon: '📂', level: 90, category: 'devops' },
+            { name: 'Rust', icon: '🦀', level: 80, category: 'emerging' },
+            { name: 'Go', icon: '🐹', level: 82, category: 'backend' },
+            { name: 'Azure', icon: '🔵', level: 84, category: 'cloud' }
         ];
+
 
         // Scroll to section function
         function scrollToSection(sectionId) {
@@ -721,3 +730,4 @@ function initScrollAnimations() {
 <li><a href="#projects" onclick="scrollToSection('projects')">Proyectos</a></li>
 <li><a href="#about" onclick="scrollToSection('about')">Sobre Mí</a></li>
 */
+
